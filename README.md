@@ -9,6 +9,8 @@
 - SQL
 
 ## Languages
+- ASCII Binary
+- JavaScript
 - Python
 - Bash
 - Bat
