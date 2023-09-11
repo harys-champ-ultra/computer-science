@@ -1,4 +1,4 @@
-# Computer Science
+# Computer Science & Development
 
 ## Operating Systems
 - Windows
@@ -8,7 +8,8 @@
 ## Databases
 - SQL
 
-## Languages
+## Languages & Technologies
+- Microservices
 - ASCII Binary
 - JavaScript
 - Python
