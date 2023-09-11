@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Shuffling</title>
+    <style>
+        .highlighted {
+            border: 2px solid red;
+        }
+        .pink-background {
+            background-color: pink;
+        }
+        .yellow-background {
+            background-color: yellow;
+        }
+        #top, #middle, #bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            border: 1px solid black;
+        }
+        img {
+            width: 30px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="first" placeholder="First" />
+    <input type="text" id="last" placeholder="Last" />
+    <button id="go">Go</button>
+
+    <div id="top"></div>
+    <div id="middle"></div>
+    <div id="bottom"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
