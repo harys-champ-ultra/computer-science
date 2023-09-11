@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Management App</title>
+</head>
+<body>
+    <!-- Log In Screen -->
+    <div id="login-screen">
+        <h1>Welcome to the Grade Management App</h1>
+        <input type="text" id="username" placeholder="Username" onkeydown="if(event.key === 'Enter') attemptLogin()">
+        <input type="password" id="password" placeholder="Password" onkeydown="if(event.key === 'Enter') attemptLogin()">
+        <button onclick="attemptLogin()">Log In</button>
+        <p id="login-error" style="color: red;"></p>
+    </div>
+
+    <!-- Grade View Screen -->
+    <div id="grade-view-screen" style="display: none;">
+        <h1>Grade View</h1>
+        <button onclick="showAddGradeScreen()">Add a Grade</button>
+        <div id="grade-list"></div>
+    </div>
+
+    <!-- Add Grade Screen -->
+    <div id="add-grade-screen" style="display: none;">
+        <h1>Add Grade</h1>
+        <input type="text" id="student-name" placeholder="Student's Name">
+        <input type="text" id="student-grade" placeholder="Student's Grade (0-100)" onkeydown="if(event.key === 'Enter') addGrade()">
+        <button onclick="addGrade()">Submit</button>
+        <p id="add-grade-error" style="color: red;"></p>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
