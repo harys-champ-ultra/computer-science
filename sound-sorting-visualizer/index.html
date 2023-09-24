@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Sorting Visualizer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper-container">
+        <div class="container-content">
+            <h1>Sound Sorting Visualizer <span class="sort-name"></span></h1>
+            <button data-sort-type="bubble">Bubble Sort</button>
+            <button data-sort-type="quick">Quick Sort</button>
+            <button data-sort-type="merge">Merge Sort</button>
+            <button data-sort-type="selection">Selection Sort</button>
+            <div class="content-data"></div>
+        </div>
+    </div>
+    <audio class="sound-effect" preload="auto">
+        <source src="./sound.mp3" type="audio/mp3">
+    </audio>
+    <script src="./script.js"></script>
+</body>
+</html>
